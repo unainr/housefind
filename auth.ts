@@ -8,10 +8,6 @@ import { compare } from "bcryptjs";
 
 export const config = {
 	runtime: 'nodejs',
-	unstable_allowDynamic: [
-	  '/src/db/lib/dbConnect.js',
-	  '/node_modules/mongoose/dist/**',
-	],
   };
 export const { handlers, signIn, signOut, auth } = NextAuth({
 	providers: [
