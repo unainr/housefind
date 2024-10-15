@@ -4,11 +4,8 @@
 /node_modules
 /.pnp
 .pnp.js
-/pnpm-lock.yaml
 .yarn/install-state.gz
-
-
-
+/pnpm-lock.yaml
 
 # testing
 /coverage
