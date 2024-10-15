@@ -6,9 +6,7 @@ import connectDB from "./lib/db";
 import Credentials from "next-auth/providers/credentials";
 import { compare } from "bcryptjs";
 
-export const config = {
-	runtime: 'nodejs',
-  };
+
 export const { handlers, signIn, signOut, auth } = NextAuth({
 	providers: [
 		GitHub({
