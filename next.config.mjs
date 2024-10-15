@@ -1,4 +1,20 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+    reactStrictMode: true,
+    swcMinify: true,
+    // webpack: (
+    //   config,
+    //   { buildId, dev, isServer, defaultLoaders, nextRuntime, webpack }
+    // ) => {
+    //   if (config.cache && !dev) {
+    //     config.cache = Object.freeze({
+    //       type: 'memory',
+    //     })
+    //   }
+    //   // Important: return the modified config
+    //   return config
+    // },
+  }
+
 
 export default nextConfig;
