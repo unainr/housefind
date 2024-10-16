@@ -1,3 +1,7 @@
+export const config = {
+	runtime: 'nodejs',
+  };
+  
 import { User } from "./models/User";
 import NextAuth, { CredentialsSignin } from "next-auth";
 import GitHub from "next-auth/providers/github";
