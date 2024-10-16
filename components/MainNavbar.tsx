@@ -137,7 +137,7 @@ const MainNavbar = ({ session }: { session: any }) => {
 						) : (
 							<>
 								<DropdownMenu>
-									<DropdownMenuTrigger>{session.user.role}</DropdownMenuTrigger>
+									<DropdownMenuTrigger>Account</DropdownMenuTrigger>
 									<DropdownMenuContent>
 										<DropdownMenuLabel>{session.user.email}</DropdownMenuLabel>
 										<DropdownMenuSeparator />
