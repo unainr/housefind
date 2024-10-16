@@ -1,4 +1,14 @@
-// middleware.ts (simplified and without Mongoose)
-import { auth } from "@/auth";
+// export {auth as middleware} from "@/auth";
 
-export { auth as middleware };
+import { NextResponse } from 'next/server';
+
+export function middleware(req:any) {
+  const token = req.cookies.get('token');
+
+  
+  return NextResponse.next();
+}
+
+export const config = {
+  matcher: ['/'],
+};
