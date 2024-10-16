@@ -59,10 +59,10 @@ export default function Property() {
 
             {/* Featured Properties Section */}
             <TabsContent value="properties">
-              <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800">
+              <h2 className="text-lg sm:text-xl md:text-2xl font-bold">
                 Hand-Picked Properties
               </h2>
-              <p className="text-gray-500 mb-4 text-sm sm:text-base">
+              <p className=" mb-4 text-sm sm:text-base">
                 A curated selection of our best properties for sale and rent.
               </p>
               <Separator className="mb-6" />
@@ -84,10 +84,10 @@ export default function Property() {
 
             {/* Property Categories Section */}
             <TabsContent value="categories">
-              <h2 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-800">
+              <h2 className="text-lg sm:text-xl md:text-2xl font-bold ">
                 Property Categories
               </h2>
-              <p className="text-gray-500 mb-4 text-sm sm:text-base">
+              <p className=" mb-4 text-sm sm:text-base">
                 Browse through various property categories for sale and rent.
               </p>
               <Separator className="mb-6" />
@@ -106,7 +106,7 @@ export default function Property() {
                           alt={album.name}
                           className="w-full h-auto object-cover rounded-md"
                         />
-                        <h3 className="mt-3 text-center text-gray-900 font-semibold text-xs sm:text-sm md:text-base lg:text-lg">
+                        <h3 className="mt-3 text-center  font-semibold text-xs sm:text-sm md:text-base lg:text-lg">
                           {album.name}
                         </h3>
                       </div>
