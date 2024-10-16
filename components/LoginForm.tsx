@@ -28,7 +28,7 @@ const LoginForm = async () => {
 			<Card className="w-[350px]">
 				<CardHeader>
 					<CardTitle>Login</CardTitle>
-					<CardDescription>Login To Myshop</CardDescription>
+					<CardDescription>Login To House Find</CardDescription>
 				</CardHeader>
 				<CardContent>
 					<MainForm/>

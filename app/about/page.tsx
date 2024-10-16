@@ -1,6 +1,7 @@
 import AboutCard from "@/components/AboutCard";
 import BlogComponents from "@/components/BlogComponents";
 import Review from "@/components/Review";
+import { Metadata } from "next";
 import React from "react";
 
 const About = () => {
@@ -32,3 +33,8 @@ const About = () => {
 };
 
 export default About;
+
+export const metadata: Metadata = {
+	title: "About HouseFind: Your Trusted Real Estate Partner",
+	description: "Learn more about HouseFind, your go-to resource for finding your dream home. Our team of dedicated real estate professionals is committed to providing exceptional service and helping you make informed decisions.",
+  };

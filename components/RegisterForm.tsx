@@ -26,7 +26,7 @@ const RegisterForm = async () => {
 			<Card className="w-[350px]">
 				<CardHeader>
 					<CardTitle>Regsiter</CardTitle>
-					<CardDescription>Welcome To Myshop</CardDescription>
+					<CardDescription>Welcome To House Find</CardDescription>
 				</CardHeader>
 				<CardContent>
 					<form action={register}>
