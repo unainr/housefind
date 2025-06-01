@@ -120,7 +120,7 @@ const MainNavbar = ({ session }: { session: any }) => {
 								<Link
 									href="/register"
 									className="flex items-center justify-center gap-x-1 py-2 px-4 text-white font-medium bg-violet-800 hover:bg-violet-900 active:bg-violet-700 rounded-full md:inline-flex">
-									Sign in
+									Sign Up
 									<svg
 										xmlns="http://www.w3.org/2000/svg"
 										viewBox="0 0 20 20"

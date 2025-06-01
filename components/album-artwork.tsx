@@ -33,6 +33,7 @@ export function AlbumArtwork({
          
             {/* Image with fixed aspect ratio and object-cover for consistent sizing */}
             <Image
+            loading="lazy"
               src={album.image}
               alt={album.name}
               width={width}

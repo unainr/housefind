@@ -9,7 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import OwnerForm from '@/components/OwnerForm';
-
+import Image from 'next/image';
 // Sample data for the houses
 const houses = [
   {
@@ -142,7 +142,10 @@ const SubProperty: React.FC<Params> = ({ params }) => {
     <div className="container mx-auto p-6 sm:p-8 lg:p-12 space-y-16">
     {/* Header Section */}
     <div className="relative">
-      <img
+      <Image
+      loading='lazy'
+      width={400}
+      height={400}
         src={selectedImage}
         alt={`${house.name} Image`}
         className="w-full h-64 sm:h-96 lg:h-[32rem] object-cover rounded-lg shadow-lg"
@@ -157,7 +160,10 @@ const SubProperty: React.FC<Params> = ({ params }) => {
     {/* Updated Image Gallery Section */}
     <div className="flex justify-center flex-wrap gap-2 sm:gap-3 mt-4">
       {house.images.map((image, index) => (
-        <img
+        <Image
+        loading='lazy'
+        width={300}
+        height={300}
           key={index}
           src={image}
           alt={`${house.name} Image ${index + 1}`}
@@ -192,63 +198,90 @@ const SubProperty: React.FC<Params> = ({ params }) => {
         {/* Updated Additional Gallery Section */}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4 sm:gap-6 mt-8">
           <div className="relative">
-            <img
+            <Image
+            height={200}
+            width={200}
+            loading="lazy"
               className="h-auto max-w-full rounded-lg hover:scale-105 transition duration-300 ease-in-out shadow-lg"
               src="/images/p-1.jpg"
               alt="Gallery image"
             />
           </div>
           <div className="relative">
-            <img
+            <Image
+            height={200}
+            width={200}
+            loading="lazy"
               className="h-auto max-w-full rounded-lg hover:scale-105 transition duration-300 ease-in-out shadow-lg"
               src="/images/p3-2.jpg"
               alt="Gallery image"
             />
           </div>
           <div className="relative">
-            <img
+            <Image
+            height={200}
+            width={200}
+            loading="lazy"
               className="h-auto max-w-full rounded-lg hover:scale-105 transition duration-300 ease-in-out shadow-lg"
               src="/images/p-2.jpg"
               alt="Gallery image"
             />
           </div>
           <div className="relative">
-            <img
+            <Image
+            height={200}
+            width={200}
+            loading="lazy"
               className="h-auto max-w-full rounded-lg hover:scale-105 transition duration-300 ease-in-out shadow-lg"
               src="/images/p2-1.jpg"
               alt="Gallery image"
             />
           </div>
           <div className="relative">
-            <img
+            <Image
+            height={200}
+            width={200}
+            loading="lazy"
               className="h-auto max-w-full rounded-lg hover:scale-105 transition duration-300 ease-in-out shadow-lg"
               src="/images/p4-1.jpg"
               alt="Gallery image"
             />
           </div>
           <div className="relative">
-            <img
+            <Image
+            height={200}
+            width={200}
+            loading="lazy"
               className="h-auto max-w-full rounded-lg hover:scale-105 transition duration-300 ease-in-out shadow-lg"
               src="/images/p2-1.jpg"
               alt="Gallery image"
             />
           </div>
           <div className="relative">
-            <img
+            <Image
+            height={200}
+            width={200}
+            loading="lazy"
               className="h-auto max-w-full rounded-lg hover:scale-105 transition duration-300 ease-in-out shadow-lg"
               src="/images/p4-2.jpg"
               alt="Gallery image"
             />
           </div>
           <div className="relative">
-            <img
+            <Image
+            height={200}
+            width={200}
+            loading="lazy"
               className="h-auto max-w-full rounded-lg hover:scale-105 transition duration-300 ease-in-out shadow-lg"
               src="/images/p6-3.jpg"
               alt="Gallery image"
             />
           </div>
           <div className="relative">
-            <img
+            <Image
+            height={200}
+            width={200}
+            loading="lazy"
               className="h-auto max-w-full rounded-lg hover:scale-105 transition duration-300 ease-in-out shadow-lg"
               src="/images/p5-3.jpg"
               alt="Gallery image"

@@ -12,7 +12,7 @@ import { AlbumArtwork } from "@/components/album-artwork";
 import { Sidebar } from "@/components/sidebar";
 import { listenNowAlbums, madeForYouAlbums } from "@/data/albums";
 import { playlists } from "@/data/playlists";
-
+import Image from "next/image";
 export const metadata: Metadata = {
   title: "Property Listings",
   description:
@@ -101,7 +101,10 @@ export default function Property() {
                         key={album.id}
                         className="w-[120px] sm:w-[160px] md:w-[200px] lg:w-[240px] flex-shrink-0 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 p-4 transform hover:scale-105"
                       >
-                        <img
+                        <Image
+                        loading="lazy"
+                        height={100}
+                        width={100}
                           src={album.image}
                           alt={album.name}
                           className="w-full h-auto object-cover rounded-md"
